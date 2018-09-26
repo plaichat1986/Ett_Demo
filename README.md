@@ -17,4 +17,6 @@ run the Test.java's main method
 2. com.laurel.eth.abi
 decode contract transaction's input data.
 translate the code into java (https://github.com/prettymuchbryce/abidecoder)
-Some Abicode failed in Abi.fromJson(), I don't know the reason
+Such like https://etherscan.io/address/0x3839416bd0095d97be9b354cbfb0f6807d4d609e#code, If Abi has fallback, the Abi.fromJson() will run with NullPointerException.
+In Abi.java, its create method only handle "constructor","function","event" type, don't handle "fallback" type. 
+But the "https://etherscan.io/tx/0xda5332582d170ef114d9e717c09aaf954b66b51942fcd8585e377093843cbb72 " also has "fallback", it run success.
