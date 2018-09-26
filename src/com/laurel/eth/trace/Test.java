@@ -10,8 +10,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		String nodeUrl = NET_URL;
-		String address = "0xd5486850fac55f39bd06194148647a731dbd8780";
-		String txHash="0xecb8ba9d125cc7bdec81d2a5d46d3ea50ecb854e52ef81a559e5375de187ab7a";
+		String address = "0x6eafdfde5aeead59b1245f6a88ff9512ab7352ec";
+		String txHash="0x3ff04a7ba6b54698ad631296a369b0e1c13f4d87a0da1ebbd1f80423e0e31465";
 		NodeService nodeService = new NodeService(nodeUrl);
 		Map<String, Map<Integer, DebugTraceTransactionLog>> traceData = null;
 
